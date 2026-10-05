@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Om Narayana | Aspiring SWE & NASA OSDR Member | ML Researcher</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Om Narayana — Aspiring Software Engineer, NASA OSDR Analysis Working Group member, ML Researcher at GCI World Matsuo-Iwasawa Lab (The University of Tokyo), and Google Student Ambassador.">
+  <meta name="keywords" content="Om Narayana, Om-CSE25, NASA OSDR, Matsuo-Iwasawa Lab, University of Tokyo, Google Student Ambassador, Software Engineer, Competitive Programming, Machine Learning, DDU Gorakhpur University">
+  <meta name="author" content="Om Narayana">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://om-cse25.github.io/">
+  <meta property="og:title" content="Om Narayana | Aspiring SWE & NASA OSDR Member | ML Researcher">
+  <meta property="og:description" content="Portfolio of Om Narayana — Aspiring SWE, NASA OSDR Member, U-Tokyo GCI ML Researcher, and Google Student Ambassador.">
+  <meta property="og:image" content="assets/avatar.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://om-cse25.github.io/">
+  <meta property="twitter:title" content="Om Narayana | Aspiring SWE & NASA OSDR Member | ML Researcher">
+  <meta property="twitter:description" content="Portfolio of Om Narayana — Aspiring SWE, NASA OSDR Member, U-Tokyo GCI ML Researcher, and Google Student Ambassador.">
+  <meta property="twitter:image" content="assets/avatar.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23090d16'/><path d='M30 50 A20 20 0 1 1 70 50 A20 20 0 1 1 30 50' fill='none' stroke='%2338bdf8' stroke-width='8'/><circle cx='50' cy='50' r='8' fill='%23818cf8'/></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+  <!-- Interactive Particle Background -->
+  <canvas id="particle-canvas" class="particle-canvas"></canvas>
+
+  <!-- Ambient Glow Blobs -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <a href="#hero" class="brand-logo" aria-label="Om Narayana Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Om</span>
+        <span class="logo-accent">.</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="#experience" class="nav-link" id="nav-link-experience">Experience</a></li>
+          <li><a href="#projects" class="nav-link" id="nav-link-projects">Research & Work</a></li>
+          <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+          <li><a href="#terminal" class="nav-link" id="nav-link-terminal">Terminal</a></li>
+          <li><a href="#education" class="nav-link" id="nav-link-education">Education</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <div class="status-indicator-pill" title="Currently open to software engineering internships and research collaborations">
+          <span class="pulse-dot"></span>
+          <span class="status-text">Open for Internships</span>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta" id="nav-cta-btn">Connect</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge-row">
+            <span class="hero-tag">
+              <svg class="tag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              NASA OSDR AWG Member & U-Tokyo GCI Researcher
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Om Narayana</span>
+          </h1>
+
+          <div class="hero-subtitle-wrapper">
+            <span class="hero-subtitle-prefix">I build & research</span>
+            <span class="hero-typed-text" id="typed-text"></span>
+            <span class="typed-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Computer Science undergraduate (CSE'29) at DDU Gorakhpur University exploring the frontiers of
+            <strong>spaceflight biological data</strong> with <strong>NASA OSDR</strong>, cutting-edge
+            <strong>machine learning</strong> with <strong>Matsuo-Iwasawa Lab (U-Tokyo)</strong>, and developer communities as a 
+            <strong>Google Student Ambassador</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-explore">
+              <span>Explore My Work</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#terminal" class="btn btn-glass" id="hero-btn-terminal">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+              <span>Launch Terminal</span>
+            </a>
+            <button class="btn btn-outline copy-email-btn" id="hero-btn-copy-email" data-email="omnarayan020907@gmail.com">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <div class="hero-social-links">
+            <a href="https://github.com/om-cse25" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub Profile" id="hero-link-github">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/om-narayana-cse" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn Profile" id="hero-link-linkedin">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.3a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:omnarayan020907@gmail.com" class="social-icon-link" aria-label="Send Email" id="hero-link-email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>omnarayan020907@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card-container">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-frame">
+              <img src="assets/avatar.jpg" alt="Om Narayana Avatar" class="avatar-img" width="460" height="460">
+              <div class="avatar-overlay"></div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-right">
+              <span class="badge-icon">🚀</span>
+              <div class="badge-content">
+                <span class="badge-title">NASA OSDR</span>
+                <span class="badge-sub">Analysis Working Group</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-mid-left">
+              <span class="badge-icon">🧠</span>
+              <div class="badge-content">
+                <span class="badge-title">Matsuo Lab</span>
+                <span class="badge-sub">U-Tokyo GCI ML</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <span class="badge-icon">🌐</span>
+              <div class="badge-content">
+                <span class="badge-title">Google Ambassador</span>
+                <span class="badge-sub">Tech Community</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+            </div>
+            <div class="metric-info">
+              <span class="metric-value">NASA OSDR</span>
+              <span class="metric-label">AWG Member (Spaceflight Data)</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <div class="metric-info">
+              <span class="metric-value">GCI World U-Tokyo</span>
+              <span class="metric-label">Matsuo-Iwasawa Lab Student</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+            </div>
+            <div class="metric-info">
+              <span class="metric-value">Google Ambassador</span>
+              <span class="metric-label">Student Community Lead</span>
+            </div>
+          </div>
+
+          <div class="metric-card">
+            <div class="metric-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="metric-info">
+              <span class="metric-value">B.Tech CSE '29</span>
+              <span class="metric-label">DDU Gorakhpur University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Bridging Data Science, Deep Space Research & Software Engineering</h2>
+          <p class="section-subtitle">
+            I am driven by curiosity at the intersection of computational biology, machine learning architectures, and high-performance algorithms.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative-card">
+            <div class="card-glow-header">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-path">om-narayana://about-summary</span>
+            </div>
+            <div class="about-body">
+              <p>
+                Hello! I'm <strong>Om Narayana</strong>, an aspiring software engineer and researcher currently pursuing my Bachelor of Technology in Computer Science and Engineering (Class of 2029) at Deen Dayal Upadhyaya Gorakhpur University.
+              </p>
+              <p>
+                My scientific journey centers on analyzing complex datasets. As an active member of the <strong>NASA Open Science Data Repository (OSDR) Analysis Working Group</strong>, I study multi-omics spaceflight data, discovering how microgravity, cosmic radiation, and deep space stress affect living organisms, while exploring machine learning models across space biology and space medicine.
+              </p>
+              <p>
+                Simultaneously, through <strong>GCI World by Matsuo-Iwasawa Lab at The University of Tokyo</strong>, I sharpen my analytical and deep learning toolkit to build scalable, data-driven solutions for complex real-world challenges.
+              </p>
+              <p>
+                Beyond research, I am a passionate <strong>competitive programmer</strong> and <strong>Google Student Ambassador</strong>, dedicated to building developer communities, solving algorithmic puzzles, and crafting modern systems.
+              </p>
+
+              <div class="about-quick-specs">
+                <div class="spec-item">
+                  <span class="spec-label">Location:</span>
+                  <span class="spec-val">Bengaluru, Karnataka &amp; Gorakhpur, India</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Degree:</span>
+                  <span class="spec-val">B.Tech in Computer Science (2025–2029)</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Primary Email:</span>
+                  <span class="spec-val">omnarayan020907@gmail.com</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label">Interests:</span>
+                  <span class="spec-val">Space Biology AI, ML Systems, C++, Algorithms</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon-wrapper cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </div>
+              <h3>Spaceflight Biological Data</h3>
+              <p>Analyzing NASA OSDR omics and physiological datasets to understand microgravity effects using computational pipelines.</p>
+              <div class="pillar-tags">
+                <span>NASA OSDR</span>
+                <span>Bioinformatics</span>
+                <span>Space Omics</span>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-wrapper purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              </div>
+              <h3>Machine Learning &amp; AI</h3>
+              <p>Developing deep learning architectures and statistical models with Tokyo University's Matsuo-Iwasawa Lab GCI program.</p>
+              <div class="pillar-tags">
+                <span>Deep Learning</span>
+                <span>PyTorch</span>
+                <span>Data Analytics</span>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-wrapper amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3>Algorithmic Problem Solving</h3>
+              <p>Rigorous practice in competitive programming, data structures, and hackathons including Harvard CS50x Puzzle Day.</p>
+              <div class="pillar-tags">
+                <span>C++</span>
+                <span>Algorithms</span>
+                <span>Optimization</span>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-wrapper green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3>Ecosystem &amp; Leadership</h3>
+              <p>Empowering tech peers as a Google Student Ambassador and previous Technical Division member at TechSphere.</p>
+              <div class="pillar-tags">
+                <span>Google Devs</span>
+                <span>Mentorship</span>
+                <span>TechSphere</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career &amp; Research</span>
+          <h2 class="section-title">Work Experience &amp; Research Appointments</h2>
+          <p class="section-subtitle">
+            Hands-on roles driving scientific exploration, data science training, and student tech ecosystems.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: NASA -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-date">September 2026 – Present · Ongoing</div>
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Open Science Data Repository (OSDR) Analysis Working Group</h3>
+                  <h4 class="timeline-company">NASA - National Aeronautics and Space Administration</h4>
+                </div>
+                <span class="timeline-location-pill">Gorakhpur / Remote · Research</span>
+              </div>
+              <p class="timeline-desc">
+                Active member of the NASA OSDR Analysis Working Group, investigating biological and physiological spaceflight datasets generated from space station missions and bio-experiments.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Exploring how spaceflight datasets can be utilized for transformative scientific and biomedical research.</li>
+                <li>Collaborating with global researchers and working group members to evaluate multi-omics data architectures.</li>
+                <li>Investigating cutting-edge AI and Machine Learning applications across space biology, neuroscience, and astronaut space medicine.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Spaceflight Data</span>
+                <span class="tag">NASA OSDR</span>
+                <span class="tag">Space Biology</span>
+                <span class="tag">AI / ML in Medicine</span>
+                <span class="tag">Neuroscience</span>
+                <span class="tag">Scientific Research</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: U-Tokyo Matsuo Lab -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-date">September 2026 – Present · Ongoing</div>
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Student &amp; Machine Learning Researcher</h3>
+                  <h4 class="timeline-company">GCI World by Matsuo-Iwasawa Lab · The University of Tokyo</h4>
+                </div>
+                <span class="timeline-location-pill">Tokyo, Japan (Global) · Academy</span>
+              </div>
+              <p class="timeline-desc">
+                Selected for the prestigious Global Consumer Intelligence (GCI) World program spearheaded by Matsuo-Iwasawa Laboratory at The University of Tokyo, one of Asia's top AI research centers.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Building deep practical skills in data science, predictive modeling, and deep learning through rigorous hands-on projects.</li>
+                <li>Developing a rigorous, data-driven methodology to solve high-impact, real-world business and technological problems.</li>
+                <li>Mastering advanced data pipelines, hypothesis testing, and neural network optimization.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Matsuo Lab</span>
+                <span class="tag">U-Tokyo</span>
+                <span class="tag">Data Science</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Google -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-date">May 2026 – Present · 6+ mos</div>
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Google Student Ambassador</h3>
+                  <h4 class="timeline-company">Google</h4>
+                </div>
+                <span class="timeline-location-pill">Campus &amp; Community Lead</span>
+              </div>
+              <p class="timeline-desc">
+                Appointed as Google Student Ambassador to champion developer technologies, AI tools, and Google Cloud initiatives across campus.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Facilitating technical sessions and workshops on developer tooling, modern web, and AI ecosystems.</li>
+                <li>Connecting students with Google career resources, hackathons, and open developer programs.</li>
+                <li>Driving peer collaborative learning and fostering an inclusive tech community on campus.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Google</span>
+                <span class="tag">Community Leadership</span>
+                <span class="tag">Developer Relations</span>
+                <span class="tag">Cloud &amp; AI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: TechSphere -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-date">March 2026 – August 2026 · 6 mos</div>
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Technical Division</h3>
+                  <h4 class="timeline-company">TechSphere</h4>
+                </div>
+                <span class="timeline-location-pill">Gorakhpur · Technical Operations</span>
+              </div>
+              <p class="timeline-desc">
+                Contributed to core technical activities, developer coordination, and platform architecture at TechSphere.
+              </p>
+              <ul class="timeline-bullets">
+                <li>Collaborated on building and maintaining internal technical tools and student project registries.</li>
+                <li>Organized technical workshops and code reviews focused on foundational computing and algorithmic logic.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Tech Division</span>
+                <span class="tag">Software Architecture</span>
+                <span class="tag">Systems</span>
+                <span class="tag">Team Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Highlights</span>
+          <h2 class="section-title">Research &amp; Engineering Showcases</h2>
+          <p class="section-subtitle">
+            A selection of projects and explorations spanning space biology analysis, machine learning pipelines, and competitive coding engines.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Disciplines</button>
+          <button class="filter-btn" data-filter="space">Spaceflight Data &amp; NASA</button>
+          <button class="filter-btn" data-filter="ml">AI &amp; Machine Learning</button>
+          <button class="filter-btn" data-filter="systems">Algorithms &amp; Systems</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: NASA OSDR -->
+          <article class="project-card" data-category="space">
+            <div class="project-image-container">
+              <img src="assets/project_nasa.jpg" alt="NASA OSDR Spaceflight Biological Dataset Analytics" class="project-img" loading="lazy">
+              <div class="project-badge">Spaceflight Research</div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-date">NASA OSDR AWG</span>
+                <span class="project-status">Active Research</span>
+              </div>
+              <h3 class="project-title">AstroBio-ML: Spaceflight Omics Explorer</h3>
+              <p class="project-desc">
+                Exploration framework for NASA's Open Science Data Repository (OSDR) spaceflight biological datasets. Analyzes cosmic radiation response, cellular microgravity adaptation, and genomic markers across space mission assays.
+              </p>
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="hl-label">Domain:</span>
+                  <span class="hl-val">Space Biology &amp; Medicine</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hl-label">Data Source:</span>
+                  <span class="hl-val">NASA OSDR Public Repository</span>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span>Python</span>
+                <span>NASA OSDR</span>
+                <span>Bioinformatics</span>
+                <span>Data Analytics</span>
+                <span>Machine Learning</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://osdr.nasa.gov/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <span>NASA OSDR Portal</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com/om-cse25" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass">
+                  <span>View Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Tokyo U Matsuo Lab -->
+          <article class="project-card" data-category="ml">
+            <div class="project-image-container">
+              <img src="assets/project_tokyo.jpg" alt="Matsuo Lab U-Tokyo Machine Learning Analytics" class="project-img" loading="lazy">
+              <div class="project-badge">Matsuo Lab AI</div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-date">U-Tokyo GCI World</span>
+                <span class="project-status">Completed &amp; Ongoing</span>
+              </div>
+              <h3 class="project-title">Matsuo Deep Learning Neural Workbench</h3>
+              <p class="project-desc">
+                Machine learning and data science research modules constructed in the Global Consumer Intelligence (GCI) program by Matsuo-Iwasawa Lab, The University of Tokyo. Features end-to-end data cleansing, hypothesis validation, and neural optimization.
+              </p>
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="hl-label">Institution:</span>
+                  <span class="hl-val">The University of Tokyo</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hl-label">Focus:</span>
+                  <span class="hl-val">Data-Driven Real World Modeling</span>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span>Python</span>
+                <span>PyTorch</span>
+                <span>Scikit-Learn</span>
+                <span>Pandas</span>
+                <span>Neural Networks</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://gci2.t.u-tokyo.ac.jp/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <span>Matsuo GCI Info</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+                <a href="https://github.com/om-cse25" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass">
+                  <span>Codebase</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: AlgoForge -->
+          <article class="project-card" data-category="systems">
+            <div class="project-image-container">
+              <img src="assets/project_algo.jpg" alt="AlgoForge Competitive Programming Engine" class="project-img" loading="lazy">
+              <div class="project-badge">Algorithms &amp; Systems</div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-date">Competitive Coding</span>
+                <span class="project-status">Continuous</span>
+              </div>
+              <h3 class="project-title">AlgoForge: High-Performance Algorithmic Suite</h3>
+              <p class="project-desc">
+                Curated repository of algorithmic solutions, computational geometry, graph algorithms, and dynamic programming implementations. Engineered for optimal time and space complexity in competitive programming contests and hackathons.
+              </p>
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <span class="hl-label">Benchmark:</span>
+                  <span class="hl-val">CS50x Puzzle Day &amp; Evolothon</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="hl-label">Language:</span>
+                  <span class="hl-val">Modern C++ (C++20) &amp; Python</span>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span>C++</span>
+                <span>Data Structures</span>
+                <span>Dynamic Programming</span>
+                <span>Graph Theory</span>
+                <span>Complexity</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/om-cse25" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <span>Browse Algorithms</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Section -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive CLI</span>
+          <h2 class="section-title">Om Narayana's Developer Shell</h2>
+          <p class="section-subtitle">
+            Prefer a command line interface? Interact directly with my background, research details, and contact options right here.
+          </p>
+        </div>
+
+        <div class="terminal-container">
+          <div class="terminal-bar">
+            <div class="terminal-buttons">
+              <span class="dot red" id="term-close"></span>
+              <span class="dot yellow" id="term-min"></span>
+              <span class="dot green" id="term-max"></span>
+            </div>
+            <div class="terminal-title">om-narayana@ddu-gorakhpur ~ zsh</div>
+            <div class="terminal-actions">
+              <button class="term-clear-btn" id="terminal-clear-btn" title="Clear terminal">clear</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminal-output">
+            <div class="terminal-line banner-line">
+              <span class="term-dim">Welcome to Om Narayana's Interactive Shell v1.0.0 (Darwin arm64)</span>
+            </div>
+            <div class="terminal-line welcome-line">
+              Type <span class="term-cyan">help</span> to view available commands, or click any quick shortcut below:
+            </div>
+          </div>
+
+          <!-- Quick command chips -->
+          <div class="terminal-chips">
+            <span class="chip-label">Quick Commands:</span>
+            <button class="term-chip" data-cmd="about">about</button>
+            <button class="term-chip" data-cmd="nasa">nasa</button>
+            <button class="term-chip" data-cmd="tokyo">tokyo</button>
+            <button class="term-chip" data-cmd="skills">skills</button>
+            <button class="term-chip" data-cmd="experience">experience</button>
+            <button class="term-chip" data-cmd="certifications">certifications</button>
+            <button class="term-chip" data-cmd="contact">contact</button>
+            <button class="term-chip" data-cmd="matrix">matrix</button>
+            <button class="term-chip" data-cmd="clear">clear</button>
+          </div>
+
+          <div class="terminal-input-row">
+            <span class="terminal-prompt">
+              <span class="term-user">om@workspace</span>:<span class="term-dir">~</span>$
+            </span>
+            <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false" placeholder="Type a command (e.g. help, nasa, skills)..." aria-label="Terminal input">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">Skills &amp; Competencies</h2>
+          <p class="section-subtitle">
+            Core technologies and tools I deploy across software engineering, machine learning, and scientific datasets.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Group 1: Languages & Core -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-icon cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Languages &amp; Core Systems</h3>
+                <span class="skill-group-subtitle">Computational &amp; Software Foundations</span>
+              </div>
+            </div>
+            <div class="skill-pills-container">
+              <div class="skill-pill"><span class="pill-dot"></span>C++ (STL, OOP, Modern C++)</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Python (NumPy, SciPy, Pandas)</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Data Structures &amp; Algorithms</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Competitive Programming</div>
+              <div class="skill-pill"><span class="pill-dot"></span>SQL &amp; Relational Queries</div>
+              <div class="skill-pill"><span class="pill-dot"></span>JavaScript (ES6+)</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Bash / Shell Scripting</div>
+            </div>
+          </div>
+
+          <!-- Group 2: AI & Data Science -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-icon purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12 2.1 12.5"/><path d="m16 8 5-5"/><path d="m8 16-5 5"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-group-title">AI &amp; Data Science</h3>
+                <span class="skill-group-subtitle">Matsuo Lab &amp; Analytics</span>
+              </div>
+            </div>
+            <div class="skill-pills-container">
+              <div class="skill-pill"><span class="pill-dot"></span>Machine Learning Algorithms</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Deep Learning Neural Nets</div>
+              <div class="skill-pill"><span class="pill-dot"></span>PyTorch &amp; Scikit-Learn</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Data Analytics &amp; Visualization</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Statistical Modeling</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Predictive Analysis</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Jupyter Lab Ecosystem</div>
+            </div>
+          </div>
+
+          <!-- Group 3: Scientific Research & Space Biology -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-icon amber">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Spaceflight &amp; Research</h3>
+                <span class="skill-group-subtitle">NASA OSDR Working Group Domain</span>
+              </div>
+            </div>
+            <div class="skill-pills-container">
+              <div class="skill-pill"><span class="pill-dot"></span>Scientific Research Methodology</div>
+              <div class="skill-pill"><span class="pill-dot"></span>NASA OSDR Dataset Exploration</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Spaceflight Multi-Omics</div>
+              <div class="skill-pill"><span class="pill-dot"></span>AI/ML in Space Medicine</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Space Biology &amp; Neuroscience Data</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Open Science Standards</div>
+            </div>
+          </div>
+
+          <!-- Group 4: Tools & Professional Practices -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="skill-icon green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-group-title">Tools &amp; Community</h3>
+                <span class="skill-group-subtitle">Developer Workflow &amp; Leadership</span>
+              </div>
+            </div>
+            <div class="skill-pills-container">
+              <div class="skill-pill"><span class="pill-dot"></span>Git &amp; GitHub Version Control</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Linux / Unix Environments</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Google Cloud &amp; AI Tools</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Google Student Ambassador</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Higher Education Advocacy</div>
+              <div class="skill-pill"><span class="pill-dot"></span>Technical Collaboration</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Honors Section -->
+    <section class="section certs-section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Recognition &amp; Honors</span>
+          <h2 class="section-title">Certifications &amp; Hackathons</h2>
+          <p class="section-subtitle">
+            Demonstrated excellence across international competitions, algorithmic challenges, and AI hackathons.
+          </p>
+        </div>
+
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="cert-content">
+              <span class="cert-issuer">Harvard University</span>
+              <h3 class="cert-title">CS50x Puzzle Day 2026</h3>
+              <p class="cert-desc">Competed in the premier global algorithmic puzzle solving challenge organized by Harvard CS50, testing analytical problem-solving and combinatorial deduction.</p>
+              <div class="cert-meta">
+                <span class="cert-badge">Algorithmic Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div class="cert-content">
+              <span class="cert-issuer">USAII</span>
+              <h3 class="cert-title">Global AI Hackathon</h3>
+              <p class="cert-desc">Participated in building artificial intelligence solutions tackling high-impact data problems under time constraints, judged on innovation, architecture, and feasibility.</p>
+              <div class="cert-meta">
+                <span class="cert-badge">AI Innovation &amp; ML</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            </div>
+            <div class="cert-content">
+              <span class="cert-issuer">Evolotek</span>
+              <h3 class="cert-title">Evolothon 1.0</h3>
+              <p class="cert-desc">Engineered innovative technical prototype under 24-hour sprint conditions, applying software systems engineering and teamwork principles.</p>
+              <div class="cert-meta">
+                <span class="cert-badge">Hackathon &amp; Prototyping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education &amp; Scholastic Journey</h2>
+          <p class="section-subtitle">
+            Strong foundation in Computer Science, Mathematics, Physics, and analytical disciplines.
+          </p>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Degree 1 -->
+          <div class="edu-card current">
+            <div class="edu-badge-current">Current Program</div>
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+            <h4 class="edu-field">Computer Science &amp; Engineering · Class of 2029</h4>
+            <div class="edu-institute">Deen Dayal Upadhyaya (DDU) Gorakhpur University</div>
+            <div class="edu-date">September 2025 – 2029</div>
+            <p class="edu-desc">
+              Focusing on algorithms, data structures, computer architecture, discrete mathematics, database systems, and software engineering methodologies.
+            </p>
+          </div>
+
+          <!-- School 2 -->
+          <div class="edu-card">
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3 class="edu-degree">Senior Secondary Education (CBSE)</h3>
+            <h4 class="edu-field">PCM (Physics, Chemistry, Mathematics)</h4>
+            <div class="edu-institute">A J J Academy Lashkarpur Sadar Varanasi UP</div>
+            <div class="edu-date">April 2024 – March 2025</div>
+            <p class="edu-desc">
+              Rigorous grounding in higher mathematics, analytical reasoning, calculus, and scientific principles.
+            </p>
+          </div>
+
+          <!-- School 3 -->
+          <div class="edu-card">
+            <div class="edu-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="edu-degree">Secondary Education</h3>
+            <h4 class="edu-field">Science &amp; Mathematics Stream</h4>
+            <div class="edu-institute">Kendriya Vidyalaya (KV)</div>
+            <div class="edu-date">April 2022 – March 2023</div>
+            <p class="edu-desc">
+              Excellence in core sciences, foundation in computer applications, and active participation in scientific exhibitions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Whether you want to discuss NASA OSDR datasets, machine learning collaborations, software engineering internships, or competitive programming—my inbox is always open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3>Direct Contact &amp; Channels</h3>
+            <p>
+              I am actively seeking software engineering internships, research fellowships, and developer community engagements. Feel free to reach out directly:
+            </p>
+
+            <div class="contact-methods">
+              <!-- Email 1 -->
+              <div class="contact-method-item">
+                <div class="method-icon cyan">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="method-text">
+                  <span class="method-label">Primary Email:</span>
+                  <a href="mailto:omnarayan020907@gmail.com" class="method-value">omnarayan020907@gmail.com</a>
+                </div>
+                <button class="copy-icon-btn copy-email-btn" data-email="omnarayan020907@gmail.com" title="Copy email address" aria-label="Copy primary email address">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-method-item">
+                <div class="method-icon purple">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.3a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+                </div>
+                <div class="method-text">
+                  <span class="method-label">LinkedIn:</span>
+                  <a href="https://www.linkedin.com/in/om-narayana-cse" target="_blank" rel="noopener noreferrer" class="method-value">linkedin.com/in/om-narayana-cse</a>
+                </div>
+                <a href="https://www.linkedin.com/in/om-narayana-cse" target="_blank" rel="noopener noreferrer" class="copy-icon-btn" title="Visit LinkedIn profile" aria-label="Visit LinkedIn profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-method-item">
+                <div class="method-icon green">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </div>
+                <div class="method-text">
+                  <span class="method-label">GitHub Repository:</span>
+                  <a href="https://github.com/om-cse25" target="_blank" rel="noopener noreferrer" class="method-value">github.com/om-cse25</a>
+                </div>
+                <a href="https://github.com/om-cse25" target="_blank" rel="noopener noreferrer" class="copy-icon-btn" title="Visit GitHub profile" aria-label="Visit GitHub profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-method-item">
+                <div class="method-icon amber">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="method-text">
+                  <span class="method-label">Locations:</span>
+                  <span class="method-value">Bengaluru, Karnataka &amp; Gorakhpur, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Interactive Form -->
+          <div class="contact-form-card">
+            <h3>Send a Message</h3>
+            <p class="form-desc">Fill in the fields below to initiate a direct email conversation with Om Narayana.</p>
+            
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" required placeholder="e.g. Alex Mercer" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email Address</label>
+                <input type="email" id="form-email" required placeholder="e.g. alex@example.com" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" required placeholder="e.g. NASA OSDR Discussion / Internship Opportunity" class="form-input">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="4" required placeholder="Write your message here..." class="form-input form-textarea"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                <span>Send via Email Client</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">Om</span>
+          <span class="logo-accent">.</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-text">
+          Crafted by <strong>Om Narayana</strong>. Hosted on GitHub Pages at <code>om-cse25.github.io</code>.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="https://github.com/om-cse25" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+          <span class="footer-separator">•</span>
+          <a href="https://www.linkedin.com/in/om-narayana-cse" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+          <span class="footer-separator">•</span>
+          <a href="mailto:omnarayan020907@gmail.com" aria-label="Email">Email</a>
+        </div>
+        <div class="footer-copyright">
+          © <span id="current-year">2026</span> Om Narayana. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Toast Notification Box -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    <span class="toast-message" id="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
